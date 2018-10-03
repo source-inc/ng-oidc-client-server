@@ -79,7 +79,7 @@ namespace ng_oidc_client_server {
             },
             AllowedCorsOrigins = new List<string> { "http://localhost:4200" },
             RedirectUris = new List<string> { "http://localhost:4200/callback.html" },
-            PostLogoutRedirectUris = new List<string> { "http://localhost:4200/singout-callback.html" },
+            PostLogoutRedirectUris = new List<string> { "http://localhost:4200/signout-callback.html" },
             AllowAccessTokensViaBrowser = true,
             AllowOfflineAccess = true
             }

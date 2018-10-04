@@ -81,7 +81,8 @@ namespace ng_oidc_client_server {
             RedirectUris = new List<string> { "http://localhost:4200/callback.html" },
             PostLogoutRedirectUris = new List<string> { "http://localhost:4200/signout-callback.html" },
             AllowAccessTokensViaBrowser = true,
-            AllowOfflineAccess = true
+            AllowOfflineAccess = true,
+            AccessTokenLifetime = 30
             }
         };
 

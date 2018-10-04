@@ -78,11 +78,15 @@ namespace ng_oidc_client_server {
             "customAPI.write"
             },
             AllowedCorsOrigins = new List<string> { "http://localhost:4200" },
-            RedirectUris = new List<string> { "http://localhost:4200/callback.html" },
+            RedirectUris = new List<string> {
+            "http://localhost:4200/callback.html",
+            "http://localhost:4200/renew-callback.html"
+            },
             PostLogoutRedirectUris = new List<string> { "http://localhost:4200/signout-callback.html" },
             AllowAccessTokensViaBrowser = true,
             AllowOfflineAccess = true,
-            AccessTokenLifetime = 30
+            AccessTokenLifetime = 30,
+            RequireConsent = false
             }
         };
 

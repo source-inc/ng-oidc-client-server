@@ -105,19 +105,6 @@ namespace ng_oidc_client_server {
 
         }
 
-        // public static List<TestUser> TestUsers =
-        //     new List<TestUser> {
-        //         new TestUser {
-        //         SubjectId = "5BE86359-073C-434B-AD2D-A3932222DABE",
-        //         Username = "ngoidcclient",
-        //         Password = "password",
-        //         Claims = new List<Claim> {
-        //         new Claim (JwtClaimTypes.Email, "ng-oidc-client@gmail.com"),
-        //         new Claim (JwtClaimTypes.Role, "admin")
-        //         }
-        //         }
-        //     };
-
         public static List<Client> Clients = new List<Client> {
             new Client {
             ClientId = "ng-oidc-client-identity",

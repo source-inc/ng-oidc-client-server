@@ -94,14 +94,19 @@ namespace ng_oidc_client_server {
                 app.UseHsts ();
             }
 
-            app.UseHttpsRedirection ();
             app.UseCors ("default");
             app.UseAuthentication ();
-            app.UseHsts ();
+
             app.UseMvc ();
             app.UseIdentityServer ();
             app.UseStaticFiles ();
-            app.UseMvcWithDefaultRoute ();
+            app.UseHttpsRedirection ();
+            app.UseMvc (routes => {
+                routes.MapRoute (
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}"
+                );
+            });
 
         }
 

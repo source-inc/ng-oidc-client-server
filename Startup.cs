@@ -94,10 +94,10 @@ namespace ng_oidc_client_server {
                 app.UseHsts ();
             }
 
-            // app.UseHttpsRedirection ();
+            app.UseHttpsRedirection ();
             app.UseCors ("default");
             app.UseAuthentication ();
-            app.UseHsts();
+            app.UseHsts ();
             app.UseMvc ();
             app.UseIdentityServer ();
             app.UseStaticFiles ();
